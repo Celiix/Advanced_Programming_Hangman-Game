@@ -15,3 +15,14 @@ public:
 private:
     vector<string> wordList;
 };
+
+class NewPlayer {
+public:
+    static void display();
+};
+
+class NewHangmanGame {}
+public: 
+    NewHangmanGame();
+    ~NewHangmanGame();
+    void play();
