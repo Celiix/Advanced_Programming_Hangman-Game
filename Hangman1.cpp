@@ -44,3 +44,19 @@ private:
     bool isGameOver();
     void cleanup();
 };
+
+// Implementation of NewWordManager
+NewWordManager::NewWordManager() {
+    wordList = {"india", "korea", "mexico", "france", "bangladesh", "australia", "ghana", "canada", "norway", "iraq"};
+}
+
+// Implementation of NewPlayer
+char NewPlayer::makeGuess() {
+    char guess;
+    cout << "Guess a Letter: ";
+    cin >> guess;
+
+   
+
+    return guess;
+}
