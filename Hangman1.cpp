@@ -18,11 +18,16 @@ private:
 
 class NewPlayer {
 public:
+    char makeGuess();
+};
+
+class StartScreen {
+public:
     static void display();
 };
 
-class NewHangmanGame {}
-public: 
+class NewHangmanGame {
+public:
     NewHangmanGame();
     ~NewHangmanGame();
     void play();
