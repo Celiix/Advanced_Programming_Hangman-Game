@@ -47,7 +47,11 @@ private:
 
 // Implementation of NewWordManager
 NewWordManager::NewWordManager() {
-    wordList = {"india", "korea", "mexico", "france", "bangladesh", "australia", "ghana", "canada", "norway", "iraq"};
+    wordList = {"india", "korea", "mexico", "france", "jamaica", "australia", "ghana", "canada", "norway", "iraq"}; // List of countries, player must guess the correct country when playing
+}
+
+string NewWordManager::getRandomWord() {
+    return wordList[rand() % wordList.size()];
 }
 
 // Implementation of NewPlayer
