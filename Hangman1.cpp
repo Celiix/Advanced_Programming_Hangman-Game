@@ -98,3 +98,33 @@ void StartScreen::display() {
     }
     cout << "\n\n";
 }
+
+// Implementation of NewHangmanGame
+NewHangmanGame::NewHangmanGame() : tries(5), word(nullptr), guessed(nullptr), dispWord(nullptr) {
+    initializeWord();
+}
+
+void NewHangmanGame::initializeWord() {
+    NewWordManager wordManager;
+    const string randomWord = wordManager.getRandomWord();
+
+    // Allocate memory for the word and copy characters
+    word = new char[randomWord.length() + 1];  // +1 for null terminator
+    strcpy(word, randomWord.c_str());
+
+    // Allocate memory for guessed and display word
+    guessed = new char[randomWord.length() + 1];
+    dispWord = new char[randomWord.length() + 1];
+    fill(dispWord, dispWord + randomWord.length(), 'X');
+
+    // Null terminate the strings
+    guessed[randomWord.length()] = '\0';
+    dispWord[randomWord.length()] = '\0';
+}
+
+void NewHangmanGame::cleanup() {
+    // Free dynamically allocated memory
+    delete[] word;
+    delete[] guessed;
+    delete[] dispWord;
+}
