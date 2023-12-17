@@ -163,3 +163,15 @@ void NewHangmanGame::play() {
 
         strcat(guessed, &guess);
     }
+
+system("cls");
+    StartScreen::display();
+    displayGameStatus();
+    displayHangman();
+
+    if (strchr(dispWord, 'X') == nullptr) {
+        cout << "\nCongratulations! You Win!\n";
+    } else {
+        cout << "\nGame Over! You Lose. The word was: " << word << "\n";
+    }
+}
