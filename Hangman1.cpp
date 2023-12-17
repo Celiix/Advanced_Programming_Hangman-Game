@@ -132,3 +132,34 @@ void NewHangmanGame::cleanup() {
 NewHangmanGame::~NewHangmanGame() {
     cleanup();
 }
+
+// Main loop for game until game over (code returns true)
+void NewHangmanGame::play() {
+    char guess;
+    while (!isGameOver()) {
+        system("cls");
+        StartScreen::display();
+        displayGameStatus();
+        displayHangman();
+
+        NewPlayer player;
+        guess = player.makeGuess();
+
+        if (strchr(guessed, guess) != nullptr) {
+            tries++;
+        }
+
+        bool flagFound = false;
+        for (size_t i = 0; i < strlen(word); i++) {
+            if (word[i] == guess && dispWord[i] == 'X') {
+                dispWord[i] = guess;
+                flagFound = true;
+            }
+        }
+
+        if (!flagFound) {
+            tries--;
+        }
+
+        strcat(guessed, &guess);
+    }
