@@ -69,4 +69,16 @@ char NewPlayer::makeGuess() {
 void StartScreen::display() {
     // Set console colors
     system("color 0B");  
+
+//Creating border for console output of game
+    cout << "\n";
+    for (int i = 0; i < 40; i++) {
+        cout << "*";
+    }
+    cout << "\n";
+
+    
+    for (int i = 0; i < 10; i++) {
+        cout << "**********                            **********\n";
+    }
 }
