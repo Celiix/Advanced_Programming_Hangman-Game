@@ -128,3 +128,7 @@ void NewHangmanGame::cleanup() {
     delete[] guessed;
     delete[] dispWord;
 }
+
+NewHangmanGame::~NewHangmanGame() {
+    cleanup();
+}
