@@ -81,4 +81,20 @@ void StartScreen::display() {
     for (int i = 0; i < 10; i++) {
         cout << "**********                            **********\n";
     }
+
+    // Print options for player to choose
+    cout << "*            1. New Game             *\n";
+    cout << "*            2. Rules                *\n";
+    cout << "*            3. Exit                 *\n";
+
+    // Print colored background for output
+    for (int i = 0; i < 10; i++) {
+        cout << "**********                            **********\n";
+    }
+
+    // Print colored border
+    for (int i = 0; i < 40; i++) {
+        cout << "*";
+    }
+    cout << "\n\n";
 }
