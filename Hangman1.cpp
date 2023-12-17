@@ -169,9 +169,26 @@ system("cls");
     displayGameStatus();
     displayHangman();
 
-    if (strchr(dispWord, 'X') == nullptr) {
-        cout << "\nCongratulations! You Win!\n";
-    } else {
-        cout << "\nGame Over! You Lose. The word was: " << word << "\n";
-    }
+    //Message to player if they win or lose
+   if (strchr(dispWord, 'X') == nullptr) {
+    cout << "\nCongratulations! You Win! The word was: " << word << "\n";
+} else {
+    cout << "\nGame Over! You Lose. The word was: " << word << "\n";
+    cout << "Your Guessed Word: " << dispWord << "\n";
+}
+    
+}
+
+//Prints out the hangman when player guesses wrong
+void NewHangmanGame::displayHangman() {
+    cout << "\n  -----"
+         << "\n  |   |"
+         << "\n  |";
+    if (tries < 5) cout << "   O    ";
+    cout << "\n  |";
+    if (tries <= 3) cout << "  /|\\   ";
+    cout << "\n  |";
+    if (tries <= 1) cout << "  / \\   ";
+    cout << "\n  |"
+         << "\n__|__\n";
 }
