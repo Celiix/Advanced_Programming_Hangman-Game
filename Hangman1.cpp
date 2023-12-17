@@ -64,3 +64,9 @@ char NewPlayer::makeGuess() {
 
     return guess;
 }
+
+// Implementation of StartScreen for game
+void StartScreen::display() {
+    // Set console colors
+    system("color 0B");  
+}
