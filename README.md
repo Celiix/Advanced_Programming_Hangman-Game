@@ -6,6 +6,12 @@ Path to find C++ (Hangman game) file
 ---------------------------------------------------------
 Follow this path - Advanced_Programming_Hangman Game/Hangman1/Hangman1/Hangman1.cpp
 
+Rules of game
+---------------------------------------------------------
+
+![image](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/6e0f2a9d-6d37-4dc6-932d-6bd8b4c907dc)
+
+
 How to play!
 ---------------------------------------------------
 1. Download VScode extentsion C/C++ Runner by franneck94
