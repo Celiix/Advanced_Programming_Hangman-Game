@@ -10,6 +10,10 @@ How to play!
 ---------------------------------------------------
 1. Download VScode extentsion C/C++ Runner by franneck94
 
+   ![image](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/96aa4f58-5d59-4c85-b56c-c93ee227cc44)
+
+
+2. Once installed select the C++ file and run it, it will appear in the terminal
    
 3. Select option 1 - New Game
    
@@ -25,7 +29,7 @@ How to play!
 
    ![Screenshot 2023-12-18 145314](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/9f60b459-e841-4b4c-9863-eb1c26e69e3e)
 
-6. The game will state wheather you have lost or won with a small message and the direct you back to the option screen.
+6. The game will state wheather you have lost or won with a small message and the direct ou back to the option screen.
 
 Player Lost -
 
