@@ -225,7 +225,7 @@ int main() {
                 break;
             }
 case 2: {
-                // Displayong the rules
+                // Displaying the rules
                 system("cls");
                 cout << "Hangman Rules:\n";
                 cout << " In this game, you have to guess a word! You will have 5 lives for guessing the word! If you guessed the word right you win the round! But if you're not able to guess the word and lives finish then you lose the round! ";
@@ -235,3 +235,16 @@ case 2: {
                 cin.get(); 
                 break;
             }
+      case 3: {
+                
+                cout << "Exiting the game...\n"; // When player choose to exit the game
+                break;
+            }
+            default:
+                cout << "Invalid option. Please try again.\n";
+                break;
+        }
+    } while (option != 3);
+
+    return 0;
+}
