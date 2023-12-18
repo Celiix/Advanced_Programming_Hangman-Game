@@ -171,7 +171,7 @@ system("cls");
 
     //Message to player if they win or lose
    if (strchr(dispWord, 'X') == nullptr) {
-    cout << "\nCongratulations! You Win! The word was: " << word << "\n";
+    cout << "\nCongratulations! You Win! " << word << "\n";
 } else {
     cout << "\nGame Over! You Lose. The word was: " << word << "\n";
     cout << "Your Guessed Word: " << dispWord << "\n";
