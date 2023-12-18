@@ -224,3 +224,14 @@ int main() {
                 game.play();
                 break;
             }
+case 2: {
+                // Displayong the rules
+                system("cls");
+                cout << "Hangman Rules:\n";
+                cout << " In this game, you have to guess a word! You will have 5 lives for guessing the word! If you guessed the word right you win the round! But if you're not able to guess the word and lives finish then you lose the round! ";
+
+                cout << "\nPress Enter to go back to the main menu...";
+                cin.ignore();
+                cin.get(); 
+                break;
+            }
