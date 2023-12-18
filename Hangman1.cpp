@@ -192,3 +192,14 @@ void NewHangmanGame::displayHangman() {
     cout << "\n  |"
          << "\n__|__\n";
 }
+
+void NewHangmanGame::displayGameStatus() {
+    cout << "\n Welcome to The Hangman Game\n\n Guess a Country Name " << endl
+         << "\n Country Name: " << dispWord << "\n\n\n"
+         << " Wrong Attempts: " << tries << " / 5\n"
+         << " Already Guessed Letters: " << guessed << endl;
+}
+
+bool NewHangmanGame::isGameOver() {
+    return (tries == 0) || (strchr(dispWord, 'X') == nullptr);
+}
