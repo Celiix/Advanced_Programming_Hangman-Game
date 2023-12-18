@@ -33,5 +33,7 @@ Player Lost -
 
 Player Wins - 
 
-![Screenshot 2023-12-18 150420](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/3a825d34-ae61-4def-8aa7-34e364c7cb89)
+![image](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/2ee27c68-a6d7-450f-9224-5ab79c67972e)
+
+
 
