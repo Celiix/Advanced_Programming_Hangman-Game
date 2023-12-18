@@ -8,25 +8,30 @@ Follow this path - Advanced_Programming_Hangman Game/Hangman1/Hangman1/Hangman1.
 
 How to play!
 ---------------------------------------------------
-1. Run the file on VScode C/C ++ Runner:Run File
-2. Select option 1 - New Game
+1. Download VScode extentsion C/C++ Runner by franneck94
+
+   
+3. Select option 1 - New Game
    
    ![image](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/96c42643-cf82-4335-9a11-c932cdf2feb4)
 
-3. You'll have 5 attempts you guess the correct word
+4. You'll have 5 attempts you guess the correct word
 
    ![image](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/535229b9-924e-4282-a5dd-c345f958e206)
 
-4. The players attempts decrease when the wrong letters are typed in and the man appears each time until he is hung.
+5. The players attempts decrease when the wrong letters are typed in and the man appears each time until he is hung.
 
    ![Screenshot 2023-12-18 145226](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/3da402a4-0e35-4631-97ee-6ec8930eb1f3)
 
    ![Screenshot 2023-12-18 145314](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/9f60b459-e841-4b4c-9863-eb1c26e69e3e)
 
-5. The game will state wheather you have lost or won with a small message and the direct you back to the option screen.
+6. The game will state wheather you have lost or won with a small message and the direct you back to the option screen.
 
 Player Lost -
 
 ![Screenshot 2023-12-18 150420](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/f54d7ceb-560b-4654-b5e0-c0457d816c93)
 
-   
+Player Wins - 
+
+![Screenshot 2023-12-18 150420](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/3a825d34-ae61-4def-8aa7-34e364c7cb89)
+
