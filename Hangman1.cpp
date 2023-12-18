@@ -194,7 +194,7 @@ void NewHangmanGame::displayHangman() {
 }
 
 void NewHangmanGame::displayGameStatus() {
-    cout << "\n Welcome to The Hangman Game\n\n Guess a Country Name " << endl
+    cout << "\n Welcome to The Hangman Game\n\n Guess a country name or else the poor guy dies! :( " << endl
          << "\n Country Name: " << dispWord << "\n\n\n"
          << " Wrong Attempts: " << tries << " / 5\n"
          << " Already Guessed Letters: " << guessed << endl;
@@ -203,3 +203,24 @@ void NewHangmanGame::displayGameStatus() {
 bool NewHangmanGame::isGameOver() {
     return (tries == 0) || (strchr(dispWord, 'X') == nullptr);
 }
+
+int main() {
+    srand(time(0));
+
+    int option;
+    do {
+        
+        StartScreen::display();
+
+        // Fetching the player's option
+        cout << "Enter your choice (1 for New Game, 2 for Rules, 3 for Exit): ";
+        cin >> option;
+
+        switch (option) {
+            case 1: {
+                // Starting a new game
+                system("cls");  // Clearing the console before starting the game
+                NewHangmanGame game;
+                game.play();
+                break;
+            }
