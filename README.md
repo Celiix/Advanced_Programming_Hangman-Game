@@ -21,11 +21,12 @@ How to play!
 
    ![Screenshot 2023-12-18 145226](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/3da402a4-0e35-4631-97ee-6ec8930eb1f3)
 
-![Screenshot 2023-12-18 145314](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/9f60b459-e841-4b4c-9863-eb1c26e69e3e)
+   ![Screenshot 2023-12-18 145314](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/9f60b459-e841-4b4c-9863-eb1c26e69e3e)
 
 5. The game will state wheather you have lost or won with a small message and the direct you back to the option screen.
 
-Player Lost - 
+Player Lost -
+
 ![Screenshot 2023-12-18 150420](https://github.com/Celiix/Advanced_Programming_Hangman-Game/assets/92170983/f54d7ceb-560b-4654-b5e0-c0457d816c93)
 
    
