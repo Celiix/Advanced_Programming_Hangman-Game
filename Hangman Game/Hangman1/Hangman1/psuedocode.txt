@@ -1,0 +1,90 @@
+Class NewWordManager
+    Method NewWordManager()
+        Initialize wordList with a set of country names
+
+    Method getRandomWord() -> string
+        Return a random word from wordList
+
+Class NewPlayer
+    Method makeGuess() -> char
+        Display prompt: "Guess a Letter: "
+        Receive user input as a character
+        Return the guessed letter
+
+Class StartScreen
+    Method display()
+        Set console colors
+        Print colored border and background
+        Print menu options (New Game, Rules, Exit)
+        Print colored border
+
+Class NewHangmanGame
+    Data members:
+        int tries
+        char* word
+        char* guessed
+        char* dispWord
+
+    Methods:
+        Method NewHangmanGame()
+            Initialize tries to 5
+            Set word, guessed, and dispWord to nullptr
+            Call initializeWord()
+
+        Method initializeWord()
+            Create an instance of NewWordManager
+            Get a random word from the manager
+            Allocate memory for word, guessed, and dispWord arrays
+            Copy characters from the random word to the arrays
+            Set dispWord to a string of 'X' characters
+
+        Method cleanup()
+            Free memory for word, guessed, and dispWord arrays
+
+        Method ~NewHangmanGame()
+            Call cleanup()
+
+        Method play()
+            char guess
+            While not game over
+                Clear the console
+                Display start screen
+                Display game status
+                Display hangman
+                Create an instance of NewPlayer
+                Get a guess from the player
+                If the guessed letter is in the word and not already guessed
+                    Update the displayed word
+                Else
+                    Decrease tries
+                Add the guessed letter to the guessed array
+            Display final game status
+            If all letters guessed
+                Display "Congratulations! You Win!"
+            Else
+                Display "Game Over! You Lose. The word was: [word]"
+
+        Method displayHangman()
+            Display hangman graphics based on the number of tries
+
+        Method displayGameStatus()
+            Display welcome message
+            Display the current state of the displayed word, tries, and guessed letters
+
+        Method isGameOver() -> bool
+            Return true if tries are 0 or there are no 'X' characters in dispWord, indicating the game is over
+
+Main
+    Initialize random seed using the current time
+    Repeat until the player chooses to exit
+        Display start screen
+        Get the player's option (1 for New Game, 2 for Rules, 3 for Exit)
+        Switch based on the player's option
+            Case 1:
+                Start a new game
+            Case 2:
+                Display rules
+            Case 3:
+                Exit the game
+            Default:
+                Display "Invalid option. Please try again."
